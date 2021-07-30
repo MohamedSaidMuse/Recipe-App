@@ -4,7 +4,7 @@ import 'core-js/stable';
 import { async } from 'regenerator-runtime';
 import { MODAL_CLOSE_SEC } from './config.js';
 import 'regenerator-runtime/runtime';
-//import recipeView from './Views/recipeView.js';
+
 import searchView from './Views/searchView.js';
 import resultsView from './Views/resultsView.js';
 
@@ -12,10 +12,7 @@ import paginationView from './Views/paginationView.js';
 import bookmarksView from './Views/bookmarksView.js';
  //import addRecipeView from './Views/addRecipeView.js';
 const recipeContainer = document.querySelector('.recipe');
-/*if (module.hot) {
-    module.hot.accept();
-}
- */
+
 const  controlRecipes = async function () {
     try {
  const id = window.location.hash.slice(1);
@@ -45,6 +42,7 @@ const  controlRecipes = async function () {
 
 
 };
+console.log('weeeeeelcome!')
 
 const controlSearchResults =  async  function() {
     try {
@@ -125,6 +123,7 @@ catch(err) {
 
 };*/
 
+
 const  init = function () {
 bookmarksView.addHandlerRender(controlBookmarks);
 recipeView.addHandlerRender(controlRecipes);
@@ -132,6 +131,7 @@ recipeView.addHandlerUpdateServings(controlServings);
 recipeView.addHandlerAddBookmark(controlAddBookmark);
 searchView.addHandlerSearch(controlSearchResults);
 paginationView.addHandlerClick(controlPagination);
+newFeature();
 //addRecipeView.addHandlerUpload(controlAddRecipe);
 
 
