@@ -42,7 +42,7 @@ const  controlRecipes = async function () {
 
 
 };
-console.log('weeeeeelcome!')
+console.log('weeeeeelcome!');
 
 const controlSearchResults =  async  function() {
     try {
