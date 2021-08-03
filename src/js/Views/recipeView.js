@@ -119,22 +119,7 @@ return `
 `;
  }).join('')}
        </div>
-    <div class="recipe__directions">
-      <h2 class="heading--2">How to cook it</h2>
-      <p class="recipe__directions-text">
-        This recipe was carefully designed and tested by
-        <span class="recipe__publisher">${this._data.publisher}</span>. Please check out
-        directions at their website.
-      </p>
-      <a
-        class="btn--small recipe__btn"
-        href="${this._data.url}" >
-        <span>Directions</span>
-        <svg class="search__icon">
-          <use href="src/img/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </a>
-    </div>
+    
     `;
 /*recipeContainer.innerHTML ='';
 recipeContainer.insertAdjacentHTML("afterbegin",markup);*/
